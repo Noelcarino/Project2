@@ -1,0 +1,132 @@
+<!-- 
+=================================================
+== Responsive Web Design - Build a Survey Form ==
+
+
+[ CHECK ] #1 - I can see a title with id="title" in H1 sized text.
+
+[ CHECK ] #2 - I can see a short explanation with id="description" in P sized text.
+
+[ CHECK ] #3 - I can see a form with id="survey-form".
+
+[ CHECK ] #4 - Inside the form element, I am required to enter my name in a field with id="name".
+
+[ CHECK ] #5 - Inside the form element, I am required to enter an email in a field with id="email".
+
+[ CHECK ] #6 - If I enter an email that is not formatted correctly, I will see an HTML5 validation error.
+
+[ CHECK ] #7 - Inside the form, I can enter a number in a field with id="number".
+
+[ CHECK ] #8 - If I enter non-numbers in the number input, I will see an HTML5 validation error.
+
+[ CHECK ] #9 - If I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error.
+
+[ CHECK ] #10 - For the name, email, and number input fields inside the form I can see corresponding labels that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label".
+
+[ CHECK ] #11 - For the name, email, and number input fields, I can see placeholder text that gives me a description or instructions for each field.
+
+[ CHECK ] #12 - Inside the form element, I can select an option from a dropdown that has a corresponding id="dropdown".
+
+[ CHECK ] #13 - Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute.
+
+[ CHECK ] #14 - Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute.
+
+[ CHECK ] #15 - Inside the form element, I am presented with a textarea at the end for additional comments.
+
+[ CHECK ] #16 - Inside the form element, I am presented with a button with id="submit" to submit all my inputs.
+
+
+
+
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Programming Languages</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+
+    <body>
+        
+        
+        <div id="div-title">
+            <h1>Programming Languages Survey</h1>
+        </div>
+        
+        <div id="main">
+            <h3>Main</h3>
+            
+
+            <div id="div-description">
+                <h3>Description</h3>
+                <p>
+                    Programming Languages Survey<br>
+                </p>
+            </div>
+
+            <!-- Form Div -->
+            <div id="div-form">
+                <h3>Form</h3>
+                <form id="form"> 
+                    <div id="section1">
+                        <label id="name-label" for="name">Name:</label>
+                        <input required id="name" type="text" placeholder="Full Name"><br><br>
+
+                        <label id="email-label" for="email">Email:</label>
+                        <input required id="email" type="email" placeholder="Email"><br><br>
+
+                        <label id="number-label" for="age">Age:</label>
+                        <input required id="number" type="number" name="Age" placeholder="Age" min="1" max="300"><br><br>
+                    </div>
+                    
+                    <div id="section2">
+                        <h3>Which Developer are you?</h3>
+                        <select required id="dropdown" name="developerType">
+                            <option value="blank"> --------------- </option>
+                            <option value="Front-End">Front End</option>
+                            <option value="Back-End">Back End</option>
+                            <option value="Full Stack">Full Stack</option>
+                        </select>
+                    </div>
+                    <br><br>
+                    
+                    <div id="section3">
+                        <h3>Languages</h3> 
+                        <input type="checkbox" value="HTML"> HTML <br>
+                        <input type="checkbox" value="CSS"> CSS <br>
+                        <input type="checkbox" value="JavaScript"> JavaScript <br>
+                        <input type="checkbox" value="HTML"> React <br><br>
+                    </div>
+                    
+                    <div id="section4">
+                    <h3>Radio Buttons</h3>
+                        <input type="radio" name="websites" value="freeCodeCamp"> FreeCodeCamp <br>
+                        <input type="radio" name="websites" value="CodeAcademy"> CodeAcademy <br>
+                        <input type="radio" name="websites" value="Udemy"> Udemy<br>
+                        <input type="radio" name="websites" value="TeamTreeHouse"> TeamTreeHouse <br>
+                    </div>
+                    
+                    Comments:<br>
+                    <textarea name="message" rows="10" cols="30">Please add any additional Programming Languages.
+                    </textarea><br><br>
+
+                    Submit: 
+                    <input id="submit" type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    
+    
+    
+    </body>
+
+
+    <footer>
+    
+    </footer>
+
+
+
+
+</html>
